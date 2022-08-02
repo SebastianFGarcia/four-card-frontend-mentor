@@ -1,0 +1,79 @@
+$Red: hsl(0, 78%, 62%)
+$Cyan: hsl(180, 62%, 55%)
+$Orange: hsl(34, 97%, 64%)
+$Blue: hsl(212, 86%, 64%)
+$Very-Dark-Blue: hsl(234, 12%, 34%)
+$Grayish-Blue:hsl(229, 6%, 66%)
+$Very-Light-Gray: hsl(0, 0%, 98%)
+$Mobile: 375px
+$Desktop: 1044px
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Poppins', sans-serif
+    font-size: 15px
+    color: $Very-Dark-Blue
+
+body
+    background-color: $Very-Light-Gray
+
+.container
+    width: $Mobile - 60px
+    margin: 60px auto  
+    header
+        text-align: center
+        .h2-header
+            font-weight: 200
+            font-size: 1.6em
+        .h1-header
+            font-size: 1.6em
+        .content-header
+            padding: 20px 0
+            color: $Grayish-Blue
+    main
+        padding-top: 50px
+        .card
+            background-color: #fff
+            border-top: 4px solid $Cyan
+            border-radius: 5px
+            box-shadow: 0px 5px 10px $Grayish-Blue
+            padding: 20px 25px
+            margin: 0 0 25px 
+            .card-title
+                font-size: 1.4em
+            .card-description
+                padding: 5px 0
+                font-size: 0.9em
+                color: $Grayish-Blue
+            .img
+                display: flex
+                justify-content: flex-end
+                padding-top: 20px
+        .mid .card:nth-child(1)
+            border-top-color: $Red
+        .mid .card:nth-child(2)
+            border-top-color: $Orange
+        .card:nth-child(3)
+            border-top-color: $Blue
+            
+.attribution
+    text-align: center
+    a 
+        color: hsl(228, 45%, 44%)
+
+@media (min-width: $Desktop)
+    .container
+        width: $Desktop - 20px
+        header
+            margin: auto
+            width: 500px
+
+        main
+            display: grid
+            grid-template-columns: 33.33% 33.33% 33.33%
+            align-items: center
+            gap: 20px
