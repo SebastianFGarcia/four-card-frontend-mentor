@@ -86,10 +86,10 @@ body {
     width: 500px;
   }
   .container header .h2-header {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .container header .h1-header {
-    font-size: 2em;
+    font-size: 2.5em;
   }
   .container main {
     display: grid;
