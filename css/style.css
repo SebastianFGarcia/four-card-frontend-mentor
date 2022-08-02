@@ -85,6 +85,12 @@ body {
     margin: auto;
     width: 500px;
   }
+  .container header .h2-header {
+    font-size: 2em;
+  }
+  .container header .h1-header {
+    font-size: 2em;
+  }
   .container main {
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
